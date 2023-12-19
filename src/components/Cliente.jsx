@@ -2,6 +2,7 @@ import { Form, useNavigate,redirect } from "react-router-dom"
 import { eliminarCliente } from "../data/Clientes"
 
 
+// eslint-disable-next-line react-refresh/only-export-components
 export async function action({params}){
     await eliminarCliente(params.clienteId)
     return redirect('/')

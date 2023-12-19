@@ -15,6 +15,7 @@ export async function loader({ params }) {
     return cliente
 }
 
+// eslint-disable-next-line react-refresh/only-export-components
 export async function action({request,params}) {
     const formData = await request.formData()
     const datos = Object.fromEntries(formData)
